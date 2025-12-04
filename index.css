@@ -1,5 +1,29 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("login.png");
   background-attachment: fixed;
   background-size: cover;
+}
+
+
+.loginframe {
+  margin-top: 50px;
+  width: 600px;
+  height: 800px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  border: 2px solid rgba(185, 196, 87, 0.50);
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 50px 10px #000;
+  backdrop-filter: blur(25px);
+}
+
+.Logintext {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 2000;
 }
