@@ -27,3 +27,32 @@ body {
   margin-top: 100px;
   font-weight: 2000;
 }
+
+.logincontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* space between inputs */
+  margin-top: 50px; /* space from the top or text */
+  width: 80%; /* adjust width relative to loginframe */
+  margin-left: auto;
+  margin-right: auto; /* center inputs horizontally */
+}
+
+.logininput {
+  background: none; /* no background */
+  border: none; /* remove default border */
+  border-bottom: 2px solid white; /* underline style */
+  color: white; /* text color */
+  font-size: 18px;
+  padding: 10px 5px;
+  outline: none; /* remove outline on focus */
+}
+
+.logininput::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* lighter placeholder */
+}
+
+.logininput:focus {
+  border-bottom: 2px solid #B9C457; /* optional color change on focus */
+}
+
