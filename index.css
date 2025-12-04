@@ -41,9 +41,10 @@ body {
 .logininput {
   background: none;
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 5px solid white;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
   padding: 10px 5px;
   outline: none;
 }
@@ -53,6 +54,6 @@ body {
 }
 
 .logininput:focus {
-  border-bottom: 2px solid #B9C457;
+  border-bottom: 5px solid #B9C457;
 }
 
