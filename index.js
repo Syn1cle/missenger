@@ -1,5 +1,5 @@
 // URL of your API
-const API_URL = "http://93.127.131.135:6700/Missenger";
+const API_URL = "https://93.127.131.135:6700/Missenger";
 
 // Select elements
 const loginInputs = document.querySelectorAll(".logininput");
