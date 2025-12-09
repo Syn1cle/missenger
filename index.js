@@ -3,7 +3,7 @@ const API_URL = "http://93.127.131.135:6700/Missenger";
 
 // Select elements
 const loginInputs = document.querySelectorAll(".logininput");
-const loginButton = document.querySelector(".FakeButton");
+const loginButton = document.querySelector(".Logintext");
 
 // Optional: show status to the user
 const statusDiv = document.createElement("div");
@@ -22,11 +22,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (token && username) {
         setStatus("Logged in as " + username);
-        // Optionally redirect to messaging page
     } else {
         setStatus("Not logged in");
     }
 });
+
 
 // Handle login button click
 loginButton.addEventListener("click", async () => {
@@ -59,7 +59,7 @@ loginButton.addEventListener("click", async () => {
         localStorage.setItem("username", email);
 
         setStatus("Logged in as " + email);
-
+        window.location.href = "chats.html";
         // Optionally, redirect to messaging page
         // window.location.href = "messaging.html";
 
