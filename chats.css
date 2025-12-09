@@ -4,11 +4,12 @@ justify-content: center;
 background-image: url("chat.ui.png");
 background-attachment: fixed;
 background-size: cover;
+gap: 20px;
 }
 
 .Usercontainer {
-width: 471px;
-height: 1031px;
+width: 25%;
+height: 97vh;
 border-radius: 25px;
 border: 2px solid rgba(185, 196, 87, 0.50);
 background: rgba(0, 0, 0, 0.50);
@@ -16,8 +17,8 @@ box-shadow: 0 0 50px 10px #000;
 }
 
   .chatframe {
-width: 1328px;
-height: 1031px;
+width: 70%;
+height: 97vh;
 border-radius: 25px;
 border: 2px solid rgba(185, 196, 87, 0.50);
 background: rgba(0, 0, 0, 0.50);

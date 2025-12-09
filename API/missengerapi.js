@@ -1,5 +1,3 @@
-const fs = require("fs");
-const https = require("https");
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const bcrypt = require("bcrypt");
@@ -22,11 +20,11 @@ app.post("/Missenger/Register", (req, res) => {
 
         db.run(
             "INSERT INTO users (username, password) VALUES (?, ?)",
-               [username, hash],
-               (err) => {
-                   if (err) return res.status(400).send("User already exists.");
-                   res.send("Account created!");
-               }
+            [username, hash],
+            (err) => {
+                if (err) return res.status(400).send("User already exists.");
+                res.send("Account created!");
+            }
         );
     });
 });
@@ -58,14 +56,7 @@ app.get("/Missenger/Profile", (req, res) => {
     });
 });
 
-// Read your self-signed certificate
-const options = {
-    key: fs.readFileSync("/root/key.pem"),
-    cert: fs.readFileSync("/root/cert.pem")
-};
-
-
-// Start HTTPS server
-https.createServer(options, app).listen(6700, "0.0.0.0", () => {
-    console.log("HTTPS API running on port 6700");
+// Start HTTP server
+app.listen(6700, "0.0.0.0", () => {
+    console.log("API running on port 6700");
 });
