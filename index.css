@@ -22,12 +22,23 @@ body {
 }
 
 .Logintext {
+  font-family: Inter, sans-serif;
   color: white;
   text-align: center;
   margin-top: 100px;
-  font-weight: 2000;
+  font-weight: 900; /* max font weight */
   font-size: 50px;
+  transition: font-size 0.3s ease, color 0.2s ease;
+  cursor: pointer; /* shows it’s clickable */
 }
+
+/* Hover effect */
+.Logintext:hover {
+  font-size: 100px; /* grows bigger */
+  color: #ffcc00;   /* optional: change color to indicate hover */
+}
+
+
 
 .logincontainer {
   display: flex;
@@ -75,6 +86,8 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
   margin: 200px auto;
 }
+
+
+
