@@ -22,6 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (token && username) {
         setStatus("Logged in as " + username);
+        window.location.href = "chats.html"
         // Optionally redirect to messaging page
     } else {
         setStatus("Not logged in");
@@ -59,7 +60,7 @@ loginButton.addEventListener("click", async () => {
         localStorage.setItem("username", email);
 
         setStatus("Logged in as " + email);
-
+        window.location.href = "chats.html"
         // Optionally, redirect to messaging page
         // window.location.href = "messaging.html";
 
