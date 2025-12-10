@@ -26,16 +26,16 @@ body {
   color: white;
   text-align: center;
   margin-top: 100px;
-  font-weight: 900; /* max font weight */
+  font-weight: 900;
   font-size: 50px;
   transition: font-size 0.3s ease, color 0.2s ease;
-  cursor: pointer; /* shows it’s clickable */
+  cursor: pointer;
 }
 
-/* Hover effect */
+
 .Logintext:hover {
-  font-size: 100px; /* grows bigger */
-  color: #ffcc00;   /* optional: change color to indicate hover */
+  font-size: 100px;
+  color: #ffcc00;
 }
 
 
