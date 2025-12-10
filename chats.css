@@ -16,9 +16,10 @@ border-radius: 25px;
 border: 2px solid rgba(185, 196, 87, 0.50);
 background: rgba(0, 0, 0, 0.50);
 box-shadow: 0 0 50px 10px #000;
+backdrop-filter: blur(5px);
 }
 
-  .chatframe {
+.chatframe {
 margin-top: 1vh;
 width: 70vw;
 height: 97vh;
@@ -26,6 +27,7 @@ border-radius: 25px;
 border: 2px solid rgba(185, 196, 87, 0.50);
 background: rgba(0, 0, 0, 0.50);
 box-shadow: 0 0 50px 10px #000;
+backdrop-filter: blur(5px);
 }
 
 .UserBanner {
