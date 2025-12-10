@@ -42,7 +42,6 @@ backdrop-filter: blur(5px);
   gap: 1vw;
 }
 
-
 .PFP {
   margin-left: 1vw;
   height: 9vh;
@@ -71,6 +70,7 @@ backdrop-filter: blur(5px);
   border-radius: 100px;
   margin-right: 100px;
 }
+
 .UserContainer {
   display: flex;
   justify-content: center;
@@ -79,11 +79,11 @@ backdrop-filter: blur(5px);
 .UserPlaceholder {
   height: 10.5vh;
   width: 100%;
- display: inline-flex;
- border-radius: 25px 25px 0px 0px;
+  display: inline-flex;
+  border-radius: 25px 25px 0px 0px;
   align-items: center; 
- border: 1px solid #000000;
-background: rgba(0, 0, 0, 0.50);
+  border: 1px solid #000000;
+  background: rgba(0, 0, 0, 0.50);
 }
 
 .UserName2 {
@@ -128,6 +128,6 @@ background: rgba(0, 0, 0, 0.50);
 }
 
 .Bar:Hover {
-    background: rgba(65, 65, 65, 1);
-    width: 25vw;
+  background: rgba(65, 65, 65, 1);
+  width: 25vw;
 }
