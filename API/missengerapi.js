@@ -11,7 +11,7 @@ app.use(cors());
 const db = new sqlite3.Database("users.db");
 const SECRET = "1234";
 
-// Register
+
 app.post("/Missenger/Register", (req, res) => {
     const { username, password } = req.body;
 
@@ -29,7 +29,7 @@ app.post("/Missenger/Register", (req, res) => {
     });
 });
 
-// Login
+
 app.post("/Missenger/Login", (req, res) => {
     const { username, password } = req.body;
 
@@ -40,12 +40,15 @@ app.post("/Missenger/Login", (req, res) => {
             if (!match) return res.status(403).send("Wrong password.");
 
             const token = jwt.sign({ id: user.id, username: user.username }, SECRET);
+
+
+            
             res.json({ token });
         });
     });
 });
 
-// Protected example route
+
 app.get("/Missenger/Profile", (req, res) => {
     const token = req.headers.authorization?.split(" ")[1];
     if (!token) return res.status(401).send("No token.");
