@@ -131,3 +131,19 @@ backdrop-filter: blur(5px);
   background: rgba(65, 65, 65, 1);
   width: 25vw;
 }
+
+.LogOutButton {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    width: 4vw;
+    height: 4vh;
+
+    border-radius: 15px;
+    background: rgba(255, 0, 0, 0.6);
+    color: white;
+    font-weight: 700;
+    border: 2px solid rgba(255, 0, 0, 0.8);
+    cursor: pointer;
+}
