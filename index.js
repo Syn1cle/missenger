@@ -1,7 +1,7 @@
 const API_URL = "http://93.127.131.135:6700/Missenger";
 
 const loginInputs = document.querySelectorAll(".logininput");
-const loginButton = document.querySelector(".FakeButton");
+const loginButton = document.querySelector(".Logintext");
 
 const statusDiv = document.createElement("div");
 statusDiv.style.marginTop = "10px";
@@ -17,8 +17,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (token && username) {
         setStatus("Logged in as " + username);
-        window.location.href = "chats.html"
-        // Optionally redirect to messaging page
+
+        if (!window.location.pathname.endsWith("chats.html")) {
+            window.location.href = "chats.html";
+        }
     } else {
         setStatus("Not logged in");
     }
@@ -53,7 +55,7 @@ loginButton.addEventListener("click", async () => {
         localStorage.setItem("username", email);
 
         setStatus("Logged in as " + email);
-        window.location.href = "chats.html"
+        window.location.href = "chats.html";
 
     } catch (err) {
         setStatus("Error: " + err.message);
@@ -64,4 +66,6 @@ function logout() {
     localStorage.removeItem("token");
     localStorage.removeItem("username");
     setStatus("Logged out");
+
+    window.location.href = "index.html";
 }
